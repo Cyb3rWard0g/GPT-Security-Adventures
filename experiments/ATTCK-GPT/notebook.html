@@ -7,8 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ATT&amp;CK GPT &#8212; GPT Security Adventures</title>
   
   
@@ -47,14 +46,12 @@
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script src="../../_static/tabs.js"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js"></script>
@@ -389,15 +386,15 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="att-ck-gpt">
+  <div class="tex2jax_ignore mathjax_ignore section" id="att-ck-gpt">
 <h1>ATT&amp;CK GPT<a class="headerlink" href="#att-ck-gpt" title="Permalink to this heading">#</a></h1>
 <p>References:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/en/latest/modules/indexes/getting_started.html">https://python.langchain.com/en/latest/modules/indexes/getting_started.html</a></p></li>
 </ul>
-<section id="create-att-ck-groups-knowledge-base">
+<div class="section" id="create-att-ck-groups-knowledge-base">
 <h2>Create ATT&amp;CK Groups Knowledge Base<a class="headerlink" href="#create-att-ck-groups-knowledge-base" title="Permalink to this heading">#</a></h2>
-<section id="import-modules-and-define-variables">
+<div class="section" id="import-modules-and-define-variables">
 <h3>Import Modules and Define Variables<a class="headerlink" href="#import-modules-and-define-variables" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -422,8 +419,8 @@ document.write(`
 </div>
 </div>
 </div>
-</section>
-<section id="initialize-att-ck-client">
+</div>
+<div class="section" id="initialize-att-ck-client">
 <h3>Initialize ATT&amp;CK Client<a class="headerlink" href="#initialize-att-ck-client" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -432,8 +429,8 @@ document.write(`
 </div>
 </div>
 </div>
-</section>
-<section id="get-att-ck-groups-knowledge">
+</div>
+<div class="section" id="get-att-ck-groups-knowledge">
 <h3>Get ATT&amp;CK Groups Knowledge<a class="headerlink" href="#get-att-ck-groups-knowledge" title="Permalink to this heading">#</a></h3>
 <p>Gettings technique STIX objects used by all groups accross all ATT&amp;CK matrices..</p>
 <div class="cell docutils container">
@@ -484,8 +481,8 @@ document.write(`
 </div>
 </div>
 </div>
-</section>
-<section id="create-att-ck-groups-documents">
+</div>
+<div class="section" id="create-att-ck-groups-documents">
 <h3>Create ATT&amp;CK Groups Documents<a class="headerlink" href="#create-att-ck-groups-documents" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -675,11 +672,11 @@ document.write(`
 </div>
 </div>
 </div>
-</section>
-</section>
-<section id="generate-knowledge-base-embeddings">
+</div>
+</div>
+<div class="section" id="generate-knowledge-base-embeddings">
 <h2>Generate Knowledge Base Embeddings<a class="headerlink" href="#generate-knowledge-base-embeddings" title="Permalink to this heading">#</a></h2>
-<section id="load-documents">
+<div class="section" id="load-documents">
 <h3>Load Documents<a class="headerlink" href="#load-documents" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -870,8 +867,8 @@ Max: 7350
 </div>
 </div>
 </div>
-</section>
-<section id="split-documents">
+</div>
+<div class="section" id="split-documents">
 <h3>Split Documents<a class="headerlink" href="#split-documents" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -943,8 +940,8 @@ Max: 7350
 </div>
 </div>
 </div>
-</section>
-<section id="export-knowledge-base-as-jsonl-file-optional">
+</div>
+<div class="section" id="export-knowledge-base-as-jsonl-file-optional">
 <h3>Export Knowledge Base as JSONL File (Optional)<a class="headerlink" href="#export-knowledge-base-as-jsonl-file-optional" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -972,8 +969,8 @@ Max: 7350
 </div>
 </div>
 </div>
-</section>
-<section id="generate-embeddings">
+</div>
+<div class="section" id="generate-embeddings">
 <h3>Generate Embeddings<a class="headerlink" href="#generate-embeddings" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1013,8 +1010,8 @@ Max: 7350
 </div>
 </div>
 </div>
-</section>
-<section id="create-database-pickle-file-optional">
+</div>
+<div class="section" id="create-database-pickle-file-optional">
 <h3>Create Database Pickle File (Optional)<a class="headerlink" href="#create-database-pickle-file-optional" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1050,11 +1047,11 @@ Max: 7350
 </div>
 </div>
 </div>
-</section>
-</section>
-<section id="query-att-ck-groups-knowledge-base">
+</div>
+</div>
+<div class="section" id="query-att-ck-groups-knowledge-base">
 <h2>Query ATT&amp;CK Groups Knowledge Base<a class="headerlink" href="#query-att-ck-groups-knowledge-base" title="Permalink to this heading">#</a></h2>
-<section id="initialize-openai-optional">
+<div class="section" id="initialize-openai-optional">
 <h3>Initialize OpenAI (Optional)<a class="headerlink" href="#initialize-openai-optional" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1068,8 +1065,8 @@ Max: 7350
 </div>
 </div>
 </div>
-</section>
-<section id="define-vector-store-retriever">
+</div>
+<div class="section" id="define-vector-store-retriever">
 <h3>Define Vector Store Retriever<a class="headerlink" href="#define-vector-store-retriever" title="Permalink to this heading">#</a></h3>
 <p>The retriever interface is a generic interface that makes it easy to combine documents with language models. This interface exposes a get_relevant_documents method which takes in a query (a string) and returns a list of documents.</p>
 <div class="cell docutils container">
@@ -1079,8 +1076,8 @@ Max: 7350
 </div>
 </div>
 </div>
-</section>
-<section id="get-relevant-documents">
+</div>
+<div class="section" id="get-relevant-documents">
 <h3>Get Relevant Documents<a class="headerlink" href="#get-relevant-documents" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1115,8 +1112,8 @@ Max: 7350
 </div>
 </div>
 </div>
-</section>
-<section id="question-answering">
+</div>
+<div class="section" id="question-answering">
 <h3>Question Answering<a class="headerlink" href="#question-answering" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1139,9 +1136,9 @@ Max: 7350
 </div>
 </div>
 </div>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {

@@ -7,8 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bloodhound GPT &#8212; GPT Security Adventures</title>
   
   
@@ -47,14 +46,12 @@
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script src="../../_static/tabs.js"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js"></script>
@@ -391,7 +388,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="bloodhound-gpt">
+  <div class="tex2jax_ignore mathjax_ignore section" id="bloodhound-gpt">
 <h1>Bloodhound GPT<a class="headerlink" href="#bloodhound-gpt" title="Permalink to this heading">#</a></h1>
 <p>References:</p>
 <ul class="simple">
@@ -399,7 +396,7 @@ document.write(`
 <li><p><a class="github reference external" href="https://github.com/tomasonjo/blogs/blob/master/llm/langchain_neo4j.ipynb">tomasonjo/blogs</a></p></li>
 <li><p><a class="reference external" href="https://python.langchain.com/en/latest/modules/chains/examples/graph_cypher_qa.html">https://python.langchain.com/en/latest/modules/chains/examples/graph_cypher_qa.html</a></p></li>
 </ul>
-<section id="run-neo4j-docker-image">
+<div class="section" id="run-neo4j-docker-image">
 <h2>Run Neo4j Docker Image<a class="headerlink" href="#run-neo4j-docker-image" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -454,8 +451,8 @@ SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
 </div>
 </div>
 </div>
-</section>
-<section id="import-langchain-modules">
+</div>
+<div class="section" id="import-langchain-modules">
 <h2>Import Langchain Modules<a class="headerlink" href="#import-langchain-modules" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -466,8 +463,8 @@ SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
 </div>
 </div>
 </div>
-</section>
-<section id="initialize-neo4j-connection">
+</div>
+<div class="section" id="initialize-neo4j-connection">
 <h2>Initialize Neo4j Connection<a class="headerlink" href="#initialize-neo4j-connection" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -495,11 +492,11 @@ SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
 </div>
 </div>
 </div>
-</section>
-<section id="generate-bloodhound-database">
+</div>
+<div class="section" id="generate-bloodhound-database">
 <h2>Generate Bloodhound Database<a class="headerlink" href="#generate-bloodhound-database" title="Permalink to this heading">#</a></h2>
 <p>For this step we use the <a class="reference external" href="https://github.com/BloodHoundAD/BloodHound-Tools/tree/master/DBCreator">Bloodhound DBCreator python script</a> to generate a randomized data set and import it to our plain neo4j database.</p>
-<section id="install-python-modules">
+<div class="section" id="install-python-modules">
 <h3>Install Python Modules<a class="headerlink" href="#install-python-modules" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -518,8 +515,8 @@ Note: you may need to restart the kernel to use updated packages.
 </div>
 </div>
 </div>
-</section>
-<section id="generate-data-and-import-to-database">
+</div>
+<div class="section" id="generate-data-and-import-to-database">
 <h3>Generate Data and Import to Database<a class="headerlink" href="#generate-data-and-import-to-database" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -556,8 +553,8 @@ Database Generation Finished!
 </div>
 </div>
 </div>
-</section>
-<section id="refresh-graph-schema">
+</div>
+<div class="section" id="refresh-graph-schema">
 <h3>Refresh Graph Schema<a class="headerlink" href="#refresh-graph-schema" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -584,8 +581,8 @@ Database Generation Finished!
 </div>
 </div>
 </div>
-</section>
-<section id="run-a-basic-cypher-query-example">
+</div>
+<div class="section" id="run-a-basic-cypher-query-example">
 <h3>Run a Basic Cypher Query Example<a class="headerlink" href="#run-a-basic-cypher-query-example" title="Permalink to this heading">#</a></h3>
 <p>Let’s run a basic cypher query that we could then use as an example for our next steps.</p>
 <p>Let’s look for users that have a Service Principal Name Set.</p>
@@ -625,11 +622,11 @@ Database Generation Finished!
 </div>
 </div>
 </div>
-</section>
-</section>
-<section id="enable-natural-language-search-on-bloodhound-data">
+</div>
+</div>
+<div class="section" id="enable-natural-language-search-on-bloodhound-data">
 <h2>Enable Natural Language Search on Bloodhound Data<a class="headerlink" href="#enable-natural-language-search-on-bloodhound-data" title="Permalink to this heading">#</a></h2>
-<section id="import-openai-module">
+<div class="section" id="import-openai-module">
 <h3>Import OpenAI Module<a class="headerlink" href="#import-openai-module" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -640,8 +637,8 @@ Database Generation Finished!
 </div>
 </div>
 </div>
-</section>
-<section id="set-open-ai-key-variable">
+</div>
+<div class="section" id="set-open-ai-key-variable">
 <h3>Set Open AI Key Variable<a class="headerlink" href="#set-open-ai-key-variable" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -652,8 +649,8 @@ Database Generation Finished!
 </div>
 </div>
 </div>
-</section>
-<section id="initialize-langchain-graph-cypher-question-answer-chain">
+</div>
+<div class="section" id="initialize-langchain-graph-cypher-question-answer-chain">
 <h3>Initialize Langchain Graph Cypher Question &amp; Answer Chain<a class="headerlink" href="#initialize-langchain-graph-cypher-question-answer-chain" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -664,8 +661,8 @@ Database Generation Finished!
 </div>
 </div>
 </div>
-</section>
-<section id="cypher-basic-example-natural-language">
+</div>
+<div class="section" id="cypher-basic-example-natural-language">
 <h3>Cypher Basic Example -&gt; Natural Language<a class="headerlink" href="#cypher-basic-example-natural-language" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -688,10 +685,10 @@ Full Context:
 </div>
 </div>
 </div>
-</section>
-<section id="other-cypher-queries-natural-language">
+</div>
+<div class="section" id="other-cypher-queries-natural-language">
 <h3>Other Cypher Queries -&gt; Natural Language<a class="headerlink" href="#other-cypher-queries-natural-language" title="Permalink to this heading">#</a></h3>
-<section id="cypher-find-what-groups-can-rdp">
+<div class="section" id="cypher-find-what-groups-can-rdp">
 <h4>1.1 Cypher: Find what groups can RDP<a class="headerlink" href="#cypher-find-what-groups-can-rdp" title="Permalink to this heading">#</a></h4>
 <p>Reference: <a class="reference external" href="https://hausec.com/2019/09/09/bloodhound-cypher-cheatsheet/">https://hausec.com/2019/09/09/bloodhound-cypher-cheatsheet/</a></p>
 <div class="cell docutils container">
@@ -759,8 +756,8 @@ Full Context:
 </div>
 </div>
 </div>
-</section>
-<section id="natural-language-find-what-groups-can-rdp">
+</div>
+<div class="section" id="natural-language-find-what-groups-can-rdp">
 <h4>1.2 Natural Language: Find what groups can RDP<a class="headerlink" href="#natural-language-find-what-groups-can-rdp" title="Permalink to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -788,8 +785,8 @@ Full Context:
 </div>
 </div>
 </div>
-</section>
-<section id="cypher-find-all-members-of-the-domain-admins-group">
+</div>
+<div class="section" id="cypher-find-all-members-of-the-domain-admins-group">
 <h4>2.1 Cypher: Find all members of the domain admins group<a class="headerlink" href="#cypher-find-all-members-of-the-domain-admins-group" title="Permalink to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -823,8 +820,8 @@ Full Context:
 </div>
 </div>
 </div>
-</section>
-<section id="natural-language-find-all-members-of-the-domain-admins-group">
+</div>
+<div class="section" id="natural-language-find-all-members-of-the-domain-admins-group">
 <h4>1.2 Natural Language: Find all members of the domain admins group<a class="headerlink" href="#natural-language-find-all-members-of-the-domain-admins-group" title="Permalink to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -926,10 +923,10 @@ Full Context:
 </div>
 </div>
 </div>
-</section>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {

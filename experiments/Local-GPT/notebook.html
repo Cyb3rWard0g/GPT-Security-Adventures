@@ -7,8 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Local Experiment: GPT4All &#8212; GPT Security Adventures</title>
   
   
@@ -47,14 +46,12 @@
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script src="../../_static/tabs.js"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js"></script>
@@ -67,6 +64,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'experiments/Local-GPT/notebook';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="ROADTools GPT" href="../ROADTools-GPT/notebook.html" />
     <link rel="prev" title="Bloodhound GPT" href="../Bloodhound-GPT/notebook.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -161,6 +159,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../Basics/OAI-TextPrompt-Summarizing.html">Open AI: Basic Text Prompt Summarizing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Bloodhound-GPT/notebook.html">Bloodhound GPT</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Local Experiment: GPT4All</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ROADTools-GPT/notebook.html">ROADTools GPT</a></li>
 </ul>
 
     </div>
@@ -375,10 +374,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="local-experiment-gpt4all">
+  <div class="tex2jax_ignore mathjax_ignore section" id="local-experiment-gpt4all">
 <h1>Local Experiment: GPT4All<a class="headerlink" href="#local-experiment-gpt4all" title="Permalink to this heading">#</a></h1>
 <p>Reference: <a class="reference external" href="https://medium.com/&#64;ssmaameri/private-llms-on-local-and-in-the-cloud-with-langchain-gpt4all-and-cerebrium-6dade79f45f6">https://medium.com/&#64;ssmaameri/private-llms-on-local-and-in-the-cloud-with-langchain-gpt4all-and-cerebrium-6dade79f45f6</a></p>
-<section id="import-modules">
+<div class="section" id="import-modules">
 <h2>Import Modules<a class="headerlink" href="#import-modules" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -387,8 +386,8 @@ document.write(`
 </div>
 </div>
 </div>
-</section>
-<section id="initialize-gpt4all-with-local-model">
+</div>
+<div class="section" id="initialize-gpt4all-with-local-model">
 <h2>Initialize GPT4All with Local Model<a class="headerlink" href="#initialize-gpt4all-with-local-model" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -402,8 +401,8 @@ document.write(`
 </div>
 </div>
 </div>
-</section>
-<section id="privide-a-prompt">
+</div>
+<div class="section" id="privide-a-prompt">
 <h2>Privide a Prompt<a class="headerlink" href="#privide-a-prompt" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -435,10 +434,10 @@ document.write(`
 </div>
 </div>
 </div>
-</section>
-<section id="using-a-langchain-chain">
+</div>
+<div class="section" id="using-a-langchain-chain">
 <h2>Using a Langchain Chain<a class="headerlink" href="#using-a-langchain-chain" title="Permalink to this heading">#</a></h2>
-<section id="import-additional-modules">
+<div class="section" id="import-additional-modules">
 <h3>Import Additional Modules<a class="headerlink" href="#import-additional-modules" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -448,8 +447,8 @@ document.write(`
 </div>
 </div>
 </div>
-</section>
-<section id="define-a-prompt-template">
+</div>
+<div class="section" id="define-a-prompt-template">
 <h3>Define a Prompt Template<a class="headerlink" href="#define-a-prompt-template" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -466,8 +465,8 @@ document.write(`
 </div>
 </div>
 </div>
-</section>
-<section id="initialize-gpt4all-chain-with-callbacks">
+</div>
+<div class="section" id="initialize-gpt4all-chain-with-callbacks">
 <h3>Initialize GPT4All Chain With Callbacks<a class="headerlink" href="#initialize-gpt4all-chain-with-callbacks" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -486,8 +485,8 @@ document.write(`
 </div>
 </div>
 </div>
-</section>
-<section id="define-a-query">
+</div>
+<div class="section" id="define-a-query">
 <h3>Define a Query<a class="headerlink" href="#define-a-query" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -513,9 +512,9 @@ document.write(`
 </div>
 </div>
 </div>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -556,6 +555,15 @@ document.write(`
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">Bloodhound GPT</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="../ROADTools-GPT/notebook.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">ROADTools GPT</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   
